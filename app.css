@@ -1,0 +1,97 @@
+body {
+    
+}
+h1, h2{
+    text-align: center;
+}
+nav {
+    /* General size, color, border */
+    background-color: #003049;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+
+    /* Applied to the container you're using 
+       Could be nav, main, section or class or id div like .container */
+    display: flex;  
+    
+    /* FLEX DIRECTION */
+    /* flex-direction: row;  row is default */
+    flex-direction: row-reverse;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    
+    /* JUSTIFY CONTENT */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+
+    /* ALIGN ITEMS */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/align-items */
+    align-items: flex-start;
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+
+
+    /* ALIGN CONTENT */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+     */
+    align-content: space-between;
+    /* align-content: space-around; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+        
+
+    /* FLEX WRAP */
+    /* flex-wrap: wrap; */
+}
+
+nav div {
+    width: 200px;
+    height: 100px;
+    /* max-width: 300px; */
+    text-align:center;
+    /* flex-basis: 600px; */
+
+    
+}
+
+div:nth-of-type(1) {
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: center; */
+    /* align-self: stretch; */
+}
+
+/* div:nth-of-type(5) {
+    flex-grow: 2;
+} */
+
+
+
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+main .sidebar {
+    background-color: #6930c3;
+    flex:1 2 300px;
+}
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 800px;
+}
+
+
